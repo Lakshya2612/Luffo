@@ -1,6 +1,7 @@
-import HomepageImage from "../assets/24237.jpg";
+import HomepageImage from "../assets/242371.jpg";
 import Menwearingequipment from "../assets/menequipments.svg";
 import { Helmet } from "react-helmet-async";
+
 export default function Home() {
   return (
     <div>
@@ -15,12 +16,22 @@ export default function Home() {
           content="safety shoes, work shoes, safety gloves, protective glasses, safety uniforms, baton light, PVC gumboots, reflective tape, retro tape, full body harness, safety helmet, caution tape, floor marking tape, industrial safety shoes, HDPE barricade, safety net, coverall, Dangri, boiler suit, electrical gloves, insulated gloves, traffic cone, industrial safety equipment, PU shoes, PVC shoes"
         />
       </Helmet>
-      <div className="relative">
+      {/* <div className="relative">
         <img
           src={HomepageImage}
           alt="HomepageImage"
           className="w-full h-96  brightness-50 object-cover"
         />
+        <div className="absolute inset-0 flex items-center justify-center text-white text-4xl font-bold shadow-lg sm:text-2xl sm:font-semibold">
+          <h1 className="text-center">
+            Elevate Your Workwear with Our Latest Arrivals
+          </h1>
+        </div>
+      </div> */}
+      <div
+        className="relative w-full h-96 bg-cover bg-center"
+        style={{ backgroundImage: `url(${HomepageImage})` }}
+      >
         <div className="absolute inset-0 flex items-center justify-center text-white text-4xl font-bold shadow-lg sm:text-2xl sm:font-semibold">
           <h1 className="text-center">
             Elevate Your Workwear with Our Latest Arrivals

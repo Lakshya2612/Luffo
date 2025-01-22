@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { NavLink } from "react-router-dom";
 import { FaBars, FaTimes } from "react-icons/fa";
-import Luffo from "../../assets/Luffo.png";
+import Luffo from "../../assets/Luffo.webp";
 
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
