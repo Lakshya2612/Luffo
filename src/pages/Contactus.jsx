@@ -1,7 +1,25 @@
 import { Helmet } from "react-helmet-async";
+import { useState } from "react";
 export default function Contactus() {
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    mobile: "",
+    message: "",
+  });
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData({
+      ...formData,
+      [name]: value,
+    });
+  };
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    console.log("Form submitted:", formData);
+  };
   return (
-    <div>
+    <div className="p-8">
       <Helmet>
         <title>Contact Us - Get in Touch with Our Safety Gear Experts</title>
         <meta
@@ -10,10 +28,111 @@ export default function Contactus() {
         />
         <meta
           name="keywords"
-          content="contact us, customer support, safety gear inquiries, industrial safety equipment, safety products contact"
+          content="luffo,contact us, customer support, safety gear inquiries, industrial safety equipment, safety products contact"
         />
       </Helmet>
-      <h1>Contactus</h1>
+      <div className="flex justify-center items-center mb-4">
+        <hr className="border-t-2 border-[#13357c] w-20 sm:w-12" />
+        <h1 className="text-[#13357c] text-2xl font-semibold mb-2 mx-2 text-center sm:text-xl">
+          Contact Us
+        </h1>
+        <hr className=" border-t-2 border-[#13357c] w-20 sm:w-12" />
+      </div>
+      <h1 className="text-3xl font-bold text-gray-800 mb-4 text-center sm:text-2xl">
+        Contact For Any Query
+      </h1>
+      <div>
+        <h1>Send us a message</h1>
+        <p>
+          Explore durable safety shoes and reliable workwear designed for
+          protection and comfort. Contact us for inquiries, custom orders, or
+          assistance. Your safety at work is our priority.
+        </p>
+        <form onSubmit={handleSubmit} className="space-y-4">
+          <div className="flex flex-col sm:flex-row sm:space-x-4">
+            <div className="flex-1">
+              <label
+                htmlFor="name"
+                className="block text-gray-700 font-semibold"
+              >
+                Name
+              </label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                value={formData.name}
+                onChange={handleChange}
+                className="mt-2 p-3 w-full border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#13357c]"
+                placeholder="Your Name"
+              />
+            </div>
+
+            <div className="flex-1">
+              <label
+                htmlFor="email"
+                className="block text-gray-700 font-semibold"
+              >
+                Email
+              </label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                value={formData.email}
+                onChange={handleChange}
+                className="mt-2 p-3 w-full border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#13357c]"
+                placeholder="Your Email"
+              />
+            </div>
+          </div>
+
+          <div>
+            <label
+              htmlFor="mobile"
+              className="block text-gray-700 font-semibold"
+            >
+              Mobile Number
+            </label>
+            <input
+              type="tel"
+              id="mobile"
+              name="mobile"
+              value={formData.mobile}
+              onChange={handleChange}
+              className="mt-2 p-3 w-full border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#13357c]"
+              placeholder="Your Mobile Number"
+            />
+          </div>
+
+          <div>
+            <label
+              htmlFor="message"
+              className="block text-gray-700 font-semibold"
+            >
+              Message
+            </label>
+            <textarea
+              id="message"
+              name="message"
+              value={formData.message}
+              onChange={handleChange}
+              rows="4"
+              className="mt-2 p-3 w-full border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#13357c]"
+              placeholder="Your Message"
+            ></textarea>
+          </div>
+
+          <div className="flex justify-center">
+            <button
+              type="submit"
+              className="mt-4 px-6 py-2 text-white bg-[#13357c] rounded-md hover:bg-[#0f2954] focus:outline-none focus:ring-2 focus:ring-[#13357c]"
+            >
+              Send Message
+            </button>
+          </div>
+        </form>
+      </div>
     </div>
   );
 }

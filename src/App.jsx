@@ -1,8 +1,8 @@
 import React, { Suspense } from "react";
 import { Route, Routes } from "react-router-dom";
-import Navbar from "./components/Navbar/Navbar.jsx";
 import { HelmetProvider } from "react-helmet-async";
 import Loader from "./components/Loader/Loader.jsx";
+import Navbar from "./components/Navbar/Navbar.jsx";
 const Home = React.lazy(() => import("./pages/Home.jsx"));
 const Aboutus = React.lazy(() => import("./pages/Aboutus.jsx"));
 const Contactus = React.lazy(() => import("./pages/Contactus.jsx"));

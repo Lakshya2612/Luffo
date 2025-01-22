@@ -19,6 +19,7 @@ export default function Navbar() {
       </NavLink>
       <div>
         <button
+          className="hidden sm:block"
           onClick={toggleMenu}
           aria-label={isMenuOpen ? "Close menu" : "Open menu"}
         >
@@ -28,22 +29,50 @@ export default function Navbar() {
       <div>
         <ul className="flex space-x-4 items-center px-4">
           <li>
-            <NavLink to="/" activeclassname="active">
+            <NavLink
+              to="/"
+              className={({ isActive }) =>
+                isActive
+                  ? "text-blue-600 font-semibold"
+                  : "text-gray-800 hover:text-blue-500 transition duration-200"
+              }
+            >
               Home
             </NavLink>
           </li>
           <li>
-            <NavLink to="/aboutus" activeclassname="active">
+            <NavLink
+              to="/aboutus"
+              className={({ isActive }) =>
+                isActive
+                  ? "text-blue-600 font-semibold"
+                  : "text-gray-800 hover:text-blue-500 transition duration-200"
+              }
+            >
               About US
             </NavLink>
           </li>
           <li>
-            <NavLink to="/products" activeclassname="active">
+            <NavLink
+              to="/products"
+              className={({ isActive }) =>
+                isActive
+                  ? "text-blue-600 font-semibold"
+                  : "text-gray-800 hover:text-blue-500 transition duration-200"
+              }
+            >
               Products
             </NavLink>
           </li>
           <li>
-            <NavLink to="/contactus" activeclassname="active">
+            <NavLink
+              to="/contactus"
+              className={({ isActive }) =>
+                isActive
+                  ? "text-blue-600 font-semibold"
+                  : "text-gray-800 hover:text-blue-500 transition duration-200"
+              }
+            >
               Contactus
             </NavLink>
           </li>
