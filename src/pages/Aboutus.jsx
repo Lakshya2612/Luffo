@@ -60,7 +60,7 @@ export default function Aboutus() {
           <img
             src={AboutusImage}
             alt="aboutus image"
-            className="w-[28rem] h-auto"
+            className="w-[28rem] h-92"
           />
         </div>
       </div>

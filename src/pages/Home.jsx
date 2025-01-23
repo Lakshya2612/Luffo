@@ -33,7 +33,7 @@ export default function Home() {
           <img
             src={Menwearingequipment}
             alt="allsafetyequipments"
-            className="w-96 h-auto"
+            className="w-96 h-96"
           />
         </div>
         <div className="flex-1 p-8">
