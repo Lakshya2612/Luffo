@@ -38,18 +38,18 @@ export default function Contactus() {
         </h1>
         <hr className=" border-t-2 border-[#13357c] w-20 sm:w-12" />
       </div>
-      <h1 className="text-3xl font-bold text-gray-800 mb-4 text-center sm:text-2xl">
+      <h1 className="text-4xl font-semibold text-gray-800 mb-4 text-center sm:text-2xl">
         Contact For Any Query
       </h1>
-      <div>
-        <h1>Send us a message</h1>
-        <p>
+      <div className="rounded-lg shadow-lg bg-white p-8 sm:p-6">
+        <h1 className="font-semibold text-2xl">Send us a message</h1>
+        <p className="text-base text-gray-700 mb-2 text-justify">
           Explore durable safety shoes and reliable workwear designed for
           protection and comfort. Contact us for inquiries, custom orders, or
           assistance. Your safety at work is our priority.
         </p>
-        <form onSubmit={handleSubmit} className="space-y-4">
-          <div className="flex flex-col sm:flex-row sm:space-x-4">
+        <form onSubmit={handleSubmit}>
+          <div className="flex flex-col gap-4">
             <div className="flex-1">
               <label
                 htmlFor="name"
