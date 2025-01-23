@@ -12,20 +12,35 @@ import { Link } from "react-router-dom";
 export default function Footer() {
   return (
     <div className="bg-[#14141e] text-white p-10 ">
+      <h1 className="text-center text-3xl font-semibold tracking-wide text-shadow-md mb-4 sm:text-2xl sm:text-left">
+        CHIRAG COLLECTION
+      </h1>
       <div className="flex justify-between mb-4 sm:flex-col">
         <div className="flex-1">
           <h1 className="text-2xl font-bold mb-4">Get In Touch</h1>
-          <p className="flex items-center mb-3">
-            <FaMapMarkerAlt className="mr-2" />
-            Chaprola road Near Maveshi Hospital, Prithla, Palwal, Haryana 121102
+          <p className="mb-3">
+            <a
+              href="https://www.google.com/maps?q=Chaprola+road+Near+Maveshi+Hospital,+Prithla,+Palwal,+Haryana+121102"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center"
+            >
+              <FaMapMarkerAlt className="mr-2" />
+              Chaprola road Near Maveshi Hospital, Prithla, Palwal, Haryana
+              121102
+            </a>
           </p>
-          <p className="flex items-center mb-3">
-            <FaEnvelope className="mr-2" />
-            info@luffo.in
+          <p className=" mb-3">
+            <a href="mailto:info@luffo.in" className="flex items-center">
+              <FaEnvelope className="mr-2" />
+              info@luffo.in
+            </a>
           </p>
-          <p className="flex items-center mb-3">
-            <FaPhoneAlt className="mr-2" />
-            +91- 9873499708
+          <p className=" mb-3">
+            <a href="tel:+919873499708" className="flex items-center">
+              <FaPhoneAlt className="mr-2" />
+              +91- 9873499708
+            </a>
           </p>
         </div>
         <div className="flex-1">

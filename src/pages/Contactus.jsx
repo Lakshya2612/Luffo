@@ -44,9 +44,9 @@ export default function Contactus() {
       <div className="rounded-lg shadow-lg bg-white p-8 sm:p-6">
         <h1 className="font-semibold text-2xl">Send us a message</h1>
         <p className="text-base text-gray-700 mb-2 text-justify">
-          Explore durable safety shoes and reliable workwear designed for
-          protection and comfort. Contact us for inquiries, custom orders, or
-          assistance. Your safety at work is our priority.
+          Explore durable safety shoes, PPE and reliable industrial uniforms
+          designed for protection and comfort. Contact us for inquiries, custom
+          orders, or assistance. Your safety at work is our priority.
         </p>
         <form onSubmit={handleSubmit}>
           <div className="flex flex-col gap-4">
@@ -85,51 +85,51 @@ export default function Contactus() {
                 placeholder="Your Email"
               />
             </div>
-          </div>
 
-          <div>
-            <label
-              htmlFor="mobile"
-              className="block text-gray-700 font-semibold"
-            >
-              Mobile Number
-            </label>
-            <input
-              type="tel"
-              id="mobile"
-              name="mobile"
-              value={formData.mobile}
-              onChange={handleChange}
-              className="mt-2 p-3 w-full border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#13357c]"
-              placeholder="Your Mobile Number"
-            />
-          </div>
+            <div className="flex-1">
+              <label
+                htmlFor="mobile"
+                className="block text-gray-700 font-semibold"
+              >
+                Mobile Number
+              </label>
+              <input
+                type="tel"
+                id="mobile"
+                name="mobile"
+                value={formData.mobile}
+                onChange={handleChange}
+                className="mt-2 p-3 w-full border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#13357c]"
+                placeholder="Your Mobile Number"
+              />
+            </div>
 
-          <div>
-            <label
-              htmlFor="message"
-              className="block text-gray-700 font-semibold"
-            >
-              Message
-            </label>
-            <textarea
-              id="message"
-              name="message"
-              value={formData.message}
-              onChange={handleChange}
-              rows="4"
-              className="mt-2 p-3 w-full border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#13357c]"
-              placeholder="Your Message"
-            ></textarea>
-          </div>
+            <div className="flex-1">
+              <label
+                htmlFor="message"
+                className="block text-gray-700 font-semibold"
+              >
+                Message
+              </label>
+              <textarea
+                id="message"
+                name="message"
+                value={formData.message}
+                onChange={handleChange}
+                rows="4"
+                className="mt-2 p-3 w-full border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#13357c]"
+                placeholder="Your Message"
+              ></textarea>
+            </div>
 
-          <div className="flex justify-center">
-            <button
-              type="submit"
-              className="mt-4 px-6 py-2 text-white bg-[#13357c] rounded-md hover:bg-[#0f2954] focus:outline-none focus:ring-2 focus:ring-[#13357c]"
-            >
-              Send Message
-            </button>
+            <div className="flex justify-center">
+              <button
+                type="submit"
+                className=" px-6 py-2 text-white bg-[#13357c] rounded-md hover:bg-[#0f2954] focus:outline-none focus:ring-2 focus:ring-[#13357c]"
+              >
+                Send Message
+              </button>
+            </div>
           </div>
         </form>
       </div>

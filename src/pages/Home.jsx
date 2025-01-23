@@ -24,7 +24,7 @@ export default function Home() {
         <div className="absolute inset-0 bg-black opacity-50"></div>
         <div className="relative z-10 text-center">
           <h1 className="text-4xl font-bold mb-4 sm:text-3xl">
-            Elevate Your Workwear with Our Latest Arrivals
+            Step into Safety: Gear Up with Confidence!
           </h1>
         </div>
       </div>
@@ -36,12 +36,12 @@ export default function Home() {
             className="w-96 h-96"
           />
         </div>
-        <div className="flex-1 p-8">
+        <div className="flex-1 p-8 sm:p-4">
           <h1 className="text-[#13357c] text-2xl font-semibold mb-2 sm:text-xl">
             WHY LUFFO
           </h1>
           <h1 className="text-3xl font-bold text-gray-800 mb-4 sm:text-2xl">
-            Elevating Safety Standards in Footwear and Industry Uniforms
+            Elevating Safety Standards in Footwear, PPE and Industrial Uniforms
           </h1>
           <p className="text-base text-gray-700 mb-2 text-justify">
             Welcome to Luffo, your trusted partner in enhancing workplace safety
@@ -89,29 +89,27 @@ export default function Home() {
         {/* <Carousel /> */}
         {/* gonna comple this later */}
       </div>
-      <div className="p-8">
+      <div className="p-8 sm:p-6">
         <div className="flex justify-center items-center mb-4">
           <hr className="border-t-2 border-[#13357c] w-20 sm:w-12" />
           <h1 className="text-[#13357c] text-2xl font-semibold mb-2 mx-2 text-center sm:text-xl">
-            READYMADE UNIFORMS
+            CUSTOMIZABLE UNIFORMS
           </h1>
           <hr className=" border-t-2 border-[#13357c] w-20 sm:w-12" />
         </div>
         <p className="text-justify text-gray-700">
-          Each expert association and instructive establishments have a standard
-          clothing regulation which expands the chance of the uniform business.
-          The utilization of uniform uncovers their discipline and pride as well
-          as empower the workers to focus on the commitment they make. As
-          readymade pieces of clothing are administering the market, it will
-          facilitate your interests on fitting, weaving and so on by saving your
-          time and giving you wonderful clothing great final detail.
+          Each professional association and educational institution has a
+          standard dress code, which increases the demand for uniforms. The use
+          of uniforms not only reflects discipline and pride but also allows
+          employees to focus on their work commitments. Since customizable
+          uniforms are gaining popularity in the market, they help address
+          concerns like fitting, embroidery, and other specifications by saving
+          time and offering a perfect final product.
         </p>
         <p className="text-justify text-gray-700">
-          The readymade regalia that we give are practical as well as made of
-          top quality. The excellent textures by which the regalia are made
-          assist you with enduring any climatic circumstances. The textures
-          provided by rumored plants of Jaipur, Punjab and so on hold its smooth
-          surface and sharpness after each wash.
+          The customizable uniforms we provide are not only practical but also
+          made from top-quality materials. The premium fabrics used in our
+          uniforms are designed to withstand all weather conditions.
         </p>
       </div>
     </div>

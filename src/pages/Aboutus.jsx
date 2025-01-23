@@ -28,27 +28,29 @@ export default function Aboutus() {
             Luffo- Elevating Safety and Style in Workwear
           </h1>
           <p className="text-base text-gray-700 mb-2 text-justify">
-            Luffo, where safety meets style, and functionality intertwines with
-            fashion. At Luffo, we are more than just a brand – we are your
-            dedicated partner in providing top-notch safety shoes and industry
-            uniform solutions. Explore the essence of Luffo, where innovation,
-            quality, and a commitment to excellence come together to redefine
-            workwear standards.
+            Luffo, where safety meets style and functionality intertwines with
+            fashion. At Luffo, we are more than just a brand—we are your
+            dedicated partner in providing top-notch safety shoes, Personal
+            Protective Equipments (PPE), and industrial and corporate uniform
+            solutions. Explore the essence of Luffo, where innovation, quality,
+            and a commitment to excellence come together to redefine workwear
+            standards.
           </p>
           <h1 className="text-3xl font-semibold text-gray-800 mb-4 sm:text-2xl">
             Our Vision
           </h1>
           <p className="text-base text-gray-700 mb-2 text-justify">
-            Our vision is to revolutionize the industry by providing
-            high-quality products at affordable rates while prioritizing the
-            safety and well-being of every worker. At Luffo, we believe in a
-            future where businesses can thrive without compromising on the
-            safety of their workforce or breaking the bank on essential
-            equipment.
+            Luffo, where safety meets style and functionality intertwines with
+            fashion. At Luffo, we are more than just a brand—we are your
+            dedicated partner in providing top-notch safety shoes, Personal
+            Protective Equipments(PPE), and industrial and corporate uniform
+            solutions. Explore the essence of Luffo, where innovation, quality,
+            and a commitment to excellence come together to redefine workwear
+            standards.
           </p>
           <p className="text-base text-gray-700 mb-2 text-justify">
             Luffo stands as a beacon of excellence in the realm of safety shoes
-            and industry uniforms. Our unwavering commitment to safety,
+            and industrial uniforms. Our unwavering commitment to safety,
             durability, comfort, customization, compliance, and sustainability
             sets us apart as the preferred choice for businesses aiming to
             elevate workplace safety standards. Trust Luffo to be your partner
