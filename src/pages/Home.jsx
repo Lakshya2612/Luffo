@@ -28,12 +28,12 @@ export default function Home() {
           </h1>
         </div>
       </div>
-      <div className="flex flex-wrap sm:flex-col">
+      <div className="flex flex-wrap m-4 sm:flex-col">
         <div className="flex-1 flex items-center justify-center">
           <img
             src={Menwearingequipment}
             alt="allsafetyequipments"
-            className="w-96 h-96"
+            className="w-96 h-auto"
           />
         </div>
         <div className="flex-1 p-8">
