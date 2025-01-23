@@ -15,7 +15,7 @@ export default function Aboutus() {
           content="luffo,about us, safety equipment, safety gear manufacturer, safety shoes, industrial protective gear, company mission"
         />
       </Helmet>
-      <div className="flex">
+      <div className="flex flex wrap sm:flex-col">
         <div className="flex-1 p-8">
           <div className="flex justify-center items-center mb-4">
             <hr className="border-t-2 border-[#13357c] w-20 sm:w-12" />
@@ -56,7 +56,7 @@ export default function Aboutus() {
             workforce.
           </p>
         </div>
-        <div className="flex-1 flex justify-center items-center">
+        <div className="flex-1 flex justify-center items-center p-6">
           <img
             src={AboutusImage}
             alt="aboutus image"
@@ -65,7 +65,7 @@ export default function Aboutus() {
         </div>
       </div>
       <div>
-        <div className="flex justify-center items-center mb-4">
+        <div className="flex justify-center items-center mt-6 mb-4">
           <hr className="border-t-2 border-[#13357c] w-20 sm:w-12" />
           <h1 className="text-[#13357c] text-2xl font-semibold mb-2 mx-2 text-center sm:text-xl">
             Why LUFFO

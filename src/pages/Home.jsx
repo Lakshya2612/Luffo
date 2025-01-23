@@ -23,7 +23,7 @@ export default function Home() {
       >
         <div className="absolute inset-0 bg-black opacity-50"></div>
         <div className="relative z-10 text-center">
-          <h1 className="text-4xl font-bold mb-4">
+          <h1 className="text-4xl font-bold mb-4 sm:text-3xl">
             Elevate Your Workwear with Our Latest Arrivals
           </h1>
         </div>
@@ -60,15 +60,22 @@ export default function Home() {
             in creating a safer and more secure work environment for your valued
             workforce.
           </p>
-          <ul className="list-disc list-inside text-gray-700 text-lg space-y-2">
-            <li>
-              Affordable Solutions for Industry Protecting Workers from
-              Accidents
-            </li>
-            <li>Quality Assurance Innovation for Safety</li>
-            <li>Community Engagement</li>
-            <li>Environmental Responsibility</li>
-          </ul>
+          <div className="flex flex-wrap gap-x-12 gap-y-2">
+            <div>
+              <ul className="list-disc list-inside text-gray-700 text-lg space-y-2">
+                <li>Affordable Solutions for Industry</li>
+                <li>Protecting Workers from Accidents</li>
+                <li>Quality Assurance </li>
+              </ul>
+            </div>
+            <div>
+              <ul className="list-disc list-inside text-gray-700 text-lg space-y-2">
+                <li>Innovation for Safety</li>
+                <li>Community Engagement</li>
+                <li>Environmental Responsibility</li>
+              </ul>
+            </div>
+          </div>
         </div>
       </div>
       <div>
