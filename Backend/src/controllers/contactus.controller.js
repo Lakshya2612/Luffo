@@ -1,6 +1,5 @@
 import { sendEmail } from "../utils/sendEmail.js";
 
-console.log(process.env.RECIVER_EMAIL);
 const sendmail = async (req, res) => {
   try {
     const { name, email, mobile, message } = req.body;
