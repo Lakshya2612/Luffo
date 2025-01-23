@@ -1,7 +1,6 @@
 import HomepageImage from "../assets/242371.jpg";
 import Menwearingequipment from "../assets/menequipments.svg";
 import { Helmet } from "react-helmet-async";
-// import Carousel from "../components/carousel/carousel";
 
 export default function Home() {
   return (
@@ -82,11 +81,11 @@ export default function Home() {
         <div className="flex justify-center items-center mb-4">
           <hr className="border-t-2 border-[#13357c] w-20 sm:w-12" />
           <h1 className="text-[#13357c] text-2xl font-semibold mb-2 mx-2 text-center sm:text-xl">
-            OUR PRODUCTS
+            OUR CLIENTS
           </h1>
           <hr className=" border-t-2 border-[#13357c] w-20 sm:w-12" />
         </div>
-        {/* <Carousel /> */}
+
         {/* gonna comple this later */}
       </div>
       <div className="p-8 sm:p-6">
