@@ -1,5 +1,8 @@
 import { Helmet } from "react-helmet-async";
 import { useState } from "react";
+import axios from "axios";
+import { toast } from "react-toastify";
+
 export default function Contactus() {
   const [formData, setFormData] = useState({
     name: "",
@@ -14,9 +17,17 @@ export default function Contactus() {
       [name]: value,
     });
   };
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    console.log("Form submitted:", formData);
+    try {
+      const response = await axios.post(
+        "http://localhost:3000/api/sendmail",
+        formData
+      );
+      toast.success(response.data.message);
+    } catch (error) {
+      toast.error(error.response.data.error);
+    }
   };
   return (
     <div className="p-8">
@@ -65,6 +76,7 @@ export default function Contactus() {
                 onChange={handleChange}
                 className="mt-2 p-3 w-full border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#13357c]"
                 placeholder="Your Name"
+                required
               />
             </div>
 
@@ -83,6 +95,7 @@ export default function Contactus() {
                 onChange={handleChange}
                 className="mt-2 p-3 w-full border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#13357c]"
                 placeholder="Your Email"
+                required
               />
             </div>
 
@@ -101,6 +114,7 @@ export default function Contactus() {
                 onChange={handleChange}
                 className="mt-2 p-3 w-full border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#13357c]"
                 placeholder="Your Mobile Number"
+                required
               />
             </div>
 
@@ -119,6 +133,7 @@ export default function Contactus() {
                 rows="4"
                 className="mt-2 p-3 w-full border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#13357c]"
                 placeholder="Your Message"
+                required
               ></textarea>
             </div>
 

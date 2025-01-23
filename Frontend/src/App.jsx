@@ -1,6 +1,7 @@
 import React, { Suspense } from "react";
 import { Route, Routes } from "react-router-dom";
 import { HelmetProvider } from "react-helmet-async";
+import { ToastContainer } from "react-toastify";
 import Loader from "./components/Loader/Loader.jsx";
 import Navbar from "./components/Navbar/Navbar.jsx";
 const Home = React.lazy(() => import("./pages/Home.jsx"));
@@ -24,6 +25,7 @@ function App() {
             <Route path="*" element={<Notfound />} />
           </Routes>
           <Fotter />
+          <ToastContainer position="top-center" style={{ marginTop: "5rem" }} />
         </Suspense>
       </HelmetProvider>
     </>

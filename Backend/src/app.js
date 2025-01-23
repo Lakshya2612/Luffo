@@ -1,10 +1,10 @@
 import express from "express";
 import cors from "cors";
 import cookieParser from "cookie-parser";
-import path from "path";
 
 const app = express();
 
+console.log(process.env.URL);
 app.use(
   cors({
     origin: process.env.URL,
@@ -14,7 +14,10 @@ app.use(
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
-app.use(express.static(path.join(__dirname, "./public/temp")));
 app.use(cookieParser());
+
+import contactusRouter from "./routes/contactus.routes.js";
+
+app.use("/api", contactusRouter);
 
 export { app };
