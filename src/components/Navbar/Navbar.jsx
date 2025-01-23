@@ -13,7 +13,7 @@ export default function Navbar() {
     <nav className="h-20 px-4 sticky top-0 bg-white shadow-md flex items-center justify-between z-50">
       <NavLink to="/">
         <div className="flex items-center space-x-2 px-4">
-          <img src={Luffo} alt="Logo" className="h-16 w-auto" />
+          <img src={Luffo} alt="Logo" className="h-16 w-12" />
           <h1 className="text-4xl font-semibold text-[#13357c]">LUFFO</h1>
         </div>
       </NavLink>
