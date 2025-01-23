@@ -21,7 +21,8 @@ export default function Contactus() {
     e.preventDefault();
     try {
       const response = await axios.post(
-        "http://localhost:3000/api/sendmail",
+        `
+        ${import.meta.env.VITE_BACKEND_URL}/api/sendmail`,
         formData
       );
       toast.success(response.data.message);
