@@ -1,4 +1,4 @@
-import HomepageImage from "../assets/242371.jpg";
+import HomepageImage from "../assets/home.png";
 import Menwearingequipment from "../assets/menequipments.svg";
 import { Helmet } from "react-helmet-async";
 
@@ -17,7 +17,7 @@ export default function Home() {
         />
       </Helmet>
       <div
-        className="relative w-full h-96 bg-cover bg-center flex items-center justify-center text-white"
+        className="relative w-full h-[28rem] bg-cover bg-center flex items-center justify-center text-white"
         style={{ backgroundImage: `url(${HomepageImage})` }}
       >
         <div className="absolute inset-0 bg-black opacity-50"></div>
@@ -27,7 +27,7 @@ export default function Home() {
           </h1>
         </div>
       </div>
-      <div className="flex flex-wrap m-4 sm:flex-col">
+      <div className="flex flex-wrap sm:flex-col">
         <div className="flex-1 flex items-center justify-center">
           <img
             src={Menwearingequipment}
@@ -35,7 +35,7 @@ export default function Home() {
             className="w-96 h-96"
           />
         </div>
-        <div className="flex-1 p-8 sm:p-4">
+        <div className="flex-1 p-8 sm:p-6">
           <h1 className="text-[#13357c] text-2xl font-semibold mb-2 sm:text-xl">
             WHY LUFFO
           </h1>
@@ -77,6 +77,46 @@ export default function Home() {
           </div>
         </div>
       </div>
+      {/* partnership */}
+      <div className="bg-[#13357c] text-white py-6">
+        <div className="text-center">
+          <h2 className="text-3xl font-bold mb-2 sm:text-2xl">
+            Exclusive Partnership
+          </h2>
+          <p className="text-lg mb-4 text-justify px-6 sm:text-base">
+            We are proud to announce that Chirag Collection is the exclusive
+            partner of Luffo in India. Together, we are committed to providing
+            top-quality safety solutions across the country.
+          </p>
+        </div>
+      </div>
+      {/* service available */}
+      <div className="p-8 sm:p-6">
+        <h1 className="text-[#13357c] text-3xl font-semibold mb-6 sm:text-2xl text-center tracking-wide">
+          WHERE OUR SERVICES ARE AVAILABLE ACROSS INDIA
+        </h1>
+        <p className="text-base text-gray-700 text-justify mb-6 leading-relaxed">
+          Luffo, in partnership with Chirag Collection, is proud to offer
+          top-quality safety equipment and uniforms across all regions of India.
+          From North to South, East to West, our services reach every corner of
+          the country, ensuring that businesses and workers nationwide have
+          access to the best in safety solutions.
+        </p>
+
+        <p className="text-base text-gray-700 text-justify mb-6 leading-relaxed">
+          Whether you&apos;re in a major city or a remote area, you can count on
+          Luffo and Chirag Collection to provide reliable, durable, and
+          customized safety gear and uniforms tailored to your needs. Stay tuned
+          as we continue expanding our reach, with new service areas being added
+          regularly.
+        </p>
+
+        <div className="text-center mt-6">
+          <span className="text-lg font-semibold text-[#13357c]">
+            Proudly Serving All of India!
+          </span>
+        </div>
+      </div>
       <div>
         <div className="flex justify-center items-center mb-4">
           <hr className="border-t-2 border-[#13357c] w-20 sm:w-12" />
@@ -92,7 +132,7 @@ export default function Home() {
         <div className="flex justify-center items-center mb-4">
           <hr className="border-t-2 border-[#13357c] w-20 sm:w-12" />
           <h1 className="text-[#13357c] text-2xl font-semibold mb-2 mx-2 text-center sm:text-xl">
-            CUSTOMIZABLE UNIFORMS
+            CUSTOMIZE UNIFORMS
           </h1>
           <hr className=" border-t-2 border-[#13357c] w-20 sm:w-12" />
         </div>
