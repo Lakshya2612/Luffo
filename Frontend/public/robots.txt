@@ -1,0 +1,9 @@
+# Allow all user agents (search engine bots) to crawl the entire site
+User-agent: *
+
+# Disallow crawling of specific directories (you can adjust as needed)
+Disallow: /admin/
+Disallow: /login/
+
+# Sitemap reference to help crawlers find your sitemap easily
+Sitemap: https://luffo.vercel.app/sitemap.xml
