@@ -43,7 +43,7 @@ export default function Aboutus() {
             Luffo, where safety meets style and functionality intertwines with
             fashion. At Luffo, we are more than just a brand—we are your
             dedicated partner in providing top-notch safety shoes, Personal
-            Protective Equipments(PPE), and industrial and corporate uniform
+            Protective Equipments (PPE), and industrial and corporate uniform
             solutions. Explore the essence of Luffo, where innovation, quality,
             and a commitment to excellence come together to redefine workwear
             standards.

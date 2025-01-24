@@ -45,7 +45,7 @@ export default function Footer() {
         </div>
         <div className="flex-1">
           <h1 className="text-2xl font-bold mb-4 text-center sm:text-left">
-            Contact us
+            Quick Links
           </h1>
           <div className="flex justify-center sm:justify-start mb-2">
             <ul className="space-y-3">

@@ -84,9 +84,10 @@ export default function Home() {
             Exclusive Partnership
           </h2>
           <p className="text-lg mb-4 text-justify px-6 sm:text-base">
-            We are proud to announce that Chirag Collection is the exclusive
-            partner of Luffo in India. Together, we are committed to providing
-            top-quality safety solutions across the country.
+            We are proud to announce that
+            <span className="font-bold"> Chirag Collection</span> is the
+            exclusive partner of Luffo in India. Together, we are committed to
+            providing top-quality safety solutions across the country.
           </p>
         </div>
       </div>
