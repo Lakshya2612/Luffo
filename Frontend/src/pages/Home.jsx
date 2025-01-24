@@ -1,6 +1,20 @@
 import HomepageImage from "../assets/home.png";
 import Menwearingequipment from "../assets/menequipments.svg";
 import { Helmet } from "react-helmet-async";
+import hindustan from "../assets/hindustan.png";
+import bajaj from "../assets/bajaj.png";
+import cipla from "../assets/cipla.svg";
+import mahindra from "../assets/mahindra.png";
+import samsung from "../assets/samsung.png";
+import spicejet from "../assets/spicejet.png";
+import escortkubota from "../assets/escortkubota.webp";
+import intex from "../assets/Intex.svg";
+import ace from "../assets/Action-Construction-Equipment-Limited.jpg";
+import fortis from "../assets/Fortis Hospitals Logo.png";
+import gtcargo from "../assets/gtcargo.png";
+import preet from "../assets/preet.webp";
+import unominda from "../assets/unominda.png";
+import uttam from "../assets/uttam.png";
 
 export default function Home() {
   return (
@@ -77,7 +91,6 @@ export default function Home() {
           </div>
         </div>
       </div>
-      {/* partnership */}
       <div className="bg-[#13357c] text-white py-6">
         <div className="text-center">
           <h2 className="text-3xl font-bold mb-2 sm:text-2xl">
@@ -91,7 +104,7 @@ export default function Home() {
           </p>
         </div>
       </div>
-      {/* service available */}
+
       <div className="p-8 sm:p-6">
         <h1 className="text-[#13357c] text-3xl font-semibold mb-6 sm:text-2xl text-center tracking-wide">
           WHERE OUR SERVICES ARE AVAILABLE ACROSS INDIA
@@ -119,7 +132,7 @@ export default function Home() {
         </div>
       </div>
       <div>
-        <div className="flex justify-center items-center mb-4">
+        <div className="flex justify-center items-center">
           <hr className="border-t-2 border-[#13357c] w-20 sm:w-12" />
           <h1 className="text-[#13357c] text-2xl font-semibold mb-2 mx-2 text-center sm:text-xl">
             OUR CLIENTS
@@ -128,6 +141,107 @@ export default function Home() {
         </div>
 
         {/* gonna comple this later */}
+        <div className="flex flex-wrap gap-6 justify-center px-4 sm:gap-2">
+          <div className="w-32 h-32 flex items-center justify-center">
+            <img
+              src={bajaj}
+              alt="bajaj Logo"
+              className="object-contain max-h-full"
+            />
+          </div>
+          <div className="w-32 h-32 flex items-center justify-center">
+            <img
+              src={cipla}
+              alt="cipla Logo"
+              className="object-contain max-h-full"
+            />
+          </div>
+          <div className="w-32 h-32 flex items-center justify-center">
+            <img
+              src={hindustan}
+              alt="hindustan"
+              className="object-contain max-h-full"
+            />
+          </div>
+          <div className="w-32 h-32 flex items-center justify-center">
+            <img
+              src={mahindra}
+              alt="mahindra Logo"
+              className="object-contain max-h-full"
+            />
+          </div>
+          <div className="w-32 h-32 flex items-center justify-center">
+            <img
+              src={samsung}
+              alt="samsung Logo"
+              className="object-contain max-h-full"
+            />
+          </div>
+          <div className="w-32 h-32 flex items-center justify-center">
+            <img
+              src={spicejet}
+              alt="spicejet Logo"
+              className="object-contain max-h-full"
+            />
+          </div>
+          <div className="w-32 h-32 flex items-center justify-center">
+            <img
+              src={escortkubota}
+              alt="escortkubota Logo"
+              className="object-contain max-h-full"
+            />
+          </div>
+          <div className="w-32 h-32 flex items-center justify-center">
+            <img
+              src={intex}
+              alt="intex Logo"
+              className="object-contain max-h-full"
+            />
+          </div>
+          <div className="w-32 h-32 flex items-center justify-center">
+            <img
+              src={ace}
+              alt="ace Logo"
+              className="object-contain max-h-full"
+            />
+          </div>
+          <div className="w-32 h-32 flex items-center justify-center">
+            <img
+              src={fortis}
+              alt="Fortis Hospital Logo"
+              className="object-contain max-h-full"
+            />
+          </div>
+          <div className="w-32 h-32 flex items-center justify-center">
+            <img
+              src={gtcargo}
+              alt="gt cargo Logo"
+              className="object-contain max-h-full"
+            />
+          </div>
+          <div className="w-32 h-32 flex items-center justify-center">
+            <img
+              src={preet}
+              alt="preet Logo"
+              className="object-contain max-h-full"
+            />
+          </div>
+          <div className="w-32 h-32 flex items-center justify-center">
+            <img
+              src={unominda}
+              alt="unominda Logo"
+              className="object-contain max-h-full"
+            />
+          </div>
+          <div className="w-32 h-32 flex items-center justify-center blend-mode-multiply">
+            <img
+              src={uttam}
+              alt="uttam Logo"
+              className="object-contain max-h-full blend-mode-multiply"
+            />
+          </div>
+        </div>
+        {/* end */}
       </div>
       <div className="p-8 sm:p-6">
         <div className="flex justify-center items-center mb-4">

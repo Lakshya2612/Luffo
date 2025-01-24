@@ -10,11 +10,11 @@ export default function PPE() {
       <h1 className="text-4xl font-semibold text-gray-800 mb-8">
         Personal Protective Equipments (PPE)
       </h1>
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+      <div className="flex flex-wrap gap-6">
         {PPEData.map((PPE, index) => (
           <div
             key={index}
-            className="bg-white border border-gray-300 rounded-lg shadow-md hover:shadow-lg transition-all duration-300 p-4"
+            className="bg-white border border-gray-300 rounded-lg shadow-md hover:shadow-lg transition-all duration-300 p-4 flex-1"
           >
             <img
               src={PPE.image}
