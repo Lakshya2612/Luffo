@@ -1,9 +1,29 @@
 export default function PPE() {
   const PPEData = [
-    { name: "", description: "", image: "" },
-    { name: "", description: "", image: "" },
-    { name: "", description: "", image: "" },
-    { name: "", description: "", image: "" },
+    {
+      name: "PPE1",
+      description:
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, iure!",
+      image: "",
+    },
+    {
+      name: "PPE2",
+      description:
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, iure!",
+      image: "",
+    },
+    {
+      name: "PPE3",
+      description:
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, iure!",
+      image: "",
+    },
+    {
+      name: "PPE4",
+      description:
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, iure!",
+      image: "",
+    },
   ];
   return (
     <div className=" text-center">

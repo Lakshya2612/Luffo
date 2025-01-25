@@ -1,9 +1,27 @@
+import uniform1 from "../assets/uniform1.jpeg";
+import uniform2 from "../assets/uniform2.jpeg";
+import uniform3 from "../assets/uniform3.jpeg";
+
 export default function Industrialuniforms() {
   const customizeUniformData = [
-    { name: "", description: "", image: "" },
-    { name: "", description: "", image: "" },
-    { name: "", description: "", image: "" },
-    { name: "", description: "", image: "" },
+    {
+      name: "Uniform1",
+      description:
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, et.",
+      image: uniform1,
+    },
+    {
+      name: "Uniform2",
+      description:
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, iure!",
+      image: uniform2,
+    },
+    {
+      name: "Uniform3",
+      description:
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, consequuntur?",
+      image: uniform3,
+    },
   ];
   return (
     <div className=" text-center">
