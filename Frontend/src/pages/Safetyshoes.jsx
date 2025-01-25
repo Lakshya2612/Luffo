@@ -48,7 +48,7 @@ export default function Safetyshoes() {
             <img
               src={shoe.image}
               alt={shoe.name}
-              className="w-full h-48 object-cover rounded-md mb-4 m-auto"
+              className="w-auto h-48 object-cover rounded-md mb-4 m-auto"
             />
             <h2 className="text-2xl font-semibold text-gray-800 mb-2">
               {shoe.name}
