@@ -116,13 +116,13 @@ export default function Footer() {
         </div>
       </div>
       <div className="text-center py-4 border-t border-gray-700">
-        <p>&copy; Luffo. All Rights Reserved.</p>
+        <p>&copy; Chirag collection. All Rights Reserved.</p>
         <a
           href="https://www.linkedin.com/in/lakshya2612"
           target="_blank"
           rel="noopener noreferrer"
         >
-          <p className="mt-2 text-sm">Designed by Lakshya</p>
+          <p className="mt-2 text-sm">Designed and developed by Lakshya</p>
         </a>
       </div>
     </div>

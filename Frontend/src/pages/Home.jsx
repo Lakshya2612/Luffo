@@ -139,8 +139,6 @@ export default function Home() {
           </h1>
           <hr className=" border-t-2 border-[#13357c] w-20 sm:w-12" />
         </div>
-
-        {/* gonna comple this later */}
         <div className="flex flex-wrap gap-6 justify-center px-4 sm:gap-2">
           <div className="w-32 h-32 flex items-center justify-center">
             <img
