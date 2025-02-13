@@ -1,28 +1,25 @@
+import Helmet from "../assets/helmet.jpg";
+import gloves from "../assets/gloves.jpg";
+import googles from "../assets/googles.jpg";
 export default function PPE() {
   const PPEData = [
     {
-      name: "PPE1",
+      name: "Safety Helmet",
       description:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, iure!",
-      image: "",
+      image: Helmet,
     },
     {
-      name: "PPE2",
+      name: "Safety gloves",
       description:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, iure!",
-      image: "",
+      image: gloves,
     },
     {
-      name: "PPE3",
+      name: "Safety googles",
       description:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, iure!",
-      image: "",
-    },
-    {
-      name: "PPE4",
-      description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, iure!",
-      image: "",
+      image: googles,
     },
   ];
   return (
