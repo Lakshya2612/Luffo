@@ -12,6 +12,7 @@ const Notfound = React.lazy(() => import("./pages/Notfound.jsx"));
 const Fotter = React.lazy(() => import("./components/Fotter/Fotter.jsx"));
 const Safetyshoes = React.lazy(() => import("./pages/Safetyshoes.jsx"));
 const PPE = React.lazy(() => import("./pages/PPE.jsx"));
+const Productdetail = React.lazy(() => import("./pages/Productdetail.jsx"));
 const Industrialuniforms = React.lazy(() =>
   import("./pages/Industrialuniforms.jsx")
 );
@@ -31,6 +32,9 @@ function App() {
               <Route path="safetyshoes" element={<Safetyshoes />} />
               <Route path="ppe" element={<PPE />} />
               <Route path="uniforms" element={<Industrialuniforms />} />
+              <Route path="safetyshoes/:id" element={<Productdetail />} />
+              <Route path="ppe/:id" element={<Productdetail />} />
+              <Route path="uniforms/:id" element={<Productdetail />} />
             </Route>
             <Route path="*" element={<Notfound />} />
           </Routes>

@@ -22,7 +22,7 @@ export default function Contactus() {
     try {
       const response = await axios.post(
         `
-        ${import.meta.env.VITE_BACKEND_URL}/api/sendmail`,
+        ${import.meta.env.VITE_BACKEND_URL}/api/contactus/sendmail`,
         formData
       );
       toast.success(response.data.message);
@@ -40,7 +40,7 @@ export default function Contactus() {
         />
         <meta
           name="keywords"
-          content="luffo,contact us, customer support, safety gear inquiries, industrial safety equipment, safety products contact"
+          content="luffo,contact us, customer support, safety gear inquiries, industrial safety equipment, safety products contact, safety shoes contact"
         />
       </Helmet>
       <div className="flex justify-center items-center mb-4">

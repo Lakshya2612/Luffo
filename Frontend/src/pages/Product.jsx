@@ -16,7 +16,7 @@ export default function Products() {
         />
         <meta
           name="keywords"
-          content="luffo, industrial safety shoes, safety gloves, helmets, gumboots, safety harnesses, safety helmets, reflective tape, industrial equipment"
+          content="luffo, industrial safety shoes, safety gloves, helmets, gumboots, safety harnesses, safety helmets, reflective tape, industrial equipment, luffo products, luffo ppe, luffo uniform, industrial uniform"
         />
       </Helmet>
       <div className="flex justify-center items-center mb-4">

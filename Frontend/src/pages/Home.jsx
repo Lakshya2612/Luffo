@@ -27,7 +27,7 @@ export default function Home() {
         />
         <meta
           name="keywords"
-          content="luffo,safety shoes, work shoes, safety gloves, protective glasses, safety uniforms, baton light, PVC gumboots, reflective tape, retro tape, full body harness, safety helmet, caution tape, floor marking tape, industrial safety shoes, HDPE barricade, safety net, coverall, Dangri, boiler suit, electrical gloves, insulated gloves, traffic cone, industrial safety equipment, PU shoes, PVC shoes"
+          content="luffo,safety shoes, work shoes, safety gloves, protective glasses, safety uniforms, baton light, PVC gumboots, full body harness, safety helmet, caution tape, floor marking tape, industrial safety shoes, safety net, Dangri, boiler suit, insulated gloves, industrial safety equipment, PU shoes, PVC shoes, safety harness, luffo safety shoes"
         />
       </Helmet>
       <div
@@ -99,8 +99,9 @@ export default function Home() {
           <p className="text-lg mb-4 text-justify px-6 sm:text-base">
             We are proud to announce that
             <span className="font-bold"> Chirag Collection</span> is the
-            exclusive partner of Luffo in India. Together, we are committed to
-            providing top-quality safety solutions across the country.
+            exclusive sales partner of Luffo in India. Together, we are
+            committed to providing top-quality safety solutions across the
+            country.
           </p>
         </div>
       </div>
@@ -119,10 +120,9 @@ export default function Home() {
 
         <p className="text-base text-gray-700 text-justify mb-6 leading-relaxed">
           Whether you&apos;re in a major city or a remote area, you can count on
-          Luffo and Chirag Collection to provide reliable, durable, and
-          customized safety gear and uniforms tailored to your needs. Stay tuned
-          as we continue expanding our reach, with new service areas being added
-          regularly.
+          Chirag Collection to provide reliable, durable, and customized safety
+          gear and uniforms tailored to your needs. Stay tuned as we continue
+          expanding our reach, with new service areas being added regularly.
         </p>
 
         <div className="text-center mt-6">

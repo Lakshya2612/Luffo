@@ -12,7 +12,7 @@ export default function Aboutus() {
         />
         <meta
           name="keywords"
-          content="luffo,about us, safety equipment, safety gear manufacturer, safety shoes, industrial protective gear, company mission"
+          content="luffo,about us, safety equipment, safety gear manufacturer, safety shoes, industrial protective gear, company mission, luffo vision, luffo mission"
         />
       </Helmet>
       <div className="flex flex wrap sm:flex-col">

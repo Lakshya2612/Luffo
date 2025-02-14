@@ -23,7 +23,9 @@ app.get("/", (req, res) => {
 });
 
 import contactusRouter from "./routes/contactus.routes.js";
+import productrouter from "./routes/product.routes.js";
 
-app.use("/api", contactusRouter);
+app.use("/api/contactus", contactusRouter);
+app.use("/api/products", productrouter);
 
 export { app };

@@ -20,26 +20,39 @@ export default function Footer() {
           <h1 className="text-2xl font-bold mb-4">Get In Touch</h1>
           <p className="mb-3">
             <a
-              href="https://www.google.com/maps?q=Chaprola+road+Near+Maveshi+Hospital,+Prithla,+Palwal,+Haryana+121102"
+              href="https://www.google.com/maps/place/28%C2%B014'04.9%22N+77%C2%B017'21.5%22E/@28.2346822,77.2867336,17z/data=!3m1!4b1!4m4!3m3!8m2!3d28.2346822!4d77.2893085?hl=en&entry=ttu&g_ep=EgoyMDI1MDIxMC4wIKXMDSoASAFQAw%3D%3D"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center"
             >
-              <FaMapMarkerAlt className="mr-2" />
-              Chaprola road Near Maveshi Hospital, Prithla, Palwal, Haryana
-              121102
+              <FaMapMarkerAlt className="mr-2" size={17} />
+              Corporate Office:- Chaprola road Near Maveshi Hospital, Prithla,
+              Palwal, Haryana 121102.
             </a>
           </p>
+          <p className="mb-3">
+            <a
+              href="https://www.google.com/maps/place/Chirag+Collection+%7C+Safety+Shoes+%7C+Uniforms/@28.3398867,77.311354,17z/data=!3m1!4b1!4m6!3m5!1s0x390cdbea3abe0d83:0xff52291e09c8e7f5!8m2!3d28.339882!4d77.3139289!16s%2Fg%2F11kzkf09km?entry=ttu&g_ep=EgoyMDI1MDIxMC4wIKXMDSoASAFQAw%3D%3D"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center"
+            >
+              <FaMapMarkerAlt className="mr-2 " size={17} />
+              Mini Store :- Shop no. 03, MCF 89, Gali no.06, Navlu colony,
+              Railway Station Road, Ballabgarh, Faridabad, 121004
+            </a>
+          </p>
+
           <p className=" mb-3">
-            <a href="mailto:info@luffo.in" className="flex items-center">
-              <FaEnvelope className="mr-2" />
-              info@luffo.in
+            <a href="mailto:luffosales@gmail.com" className="flex items-center">
+              <FaEnvelope className="mr-2 " size={17} />
+              luffosales@gmail.com
             </a>
           </p>
           <p className=" mb-3">
             <a href="tel:+919873499708" className="flex items-center">
-              <FaPhoneAlt className="mr-2" />
-              +91- 9873499708
+              <FaPhoneAlt className="mr-2" size={17} />
+              +91- 9811606507
             </a>
           </p>
         </div>
