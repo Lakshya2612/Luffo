@@ -14,7 +14,7 @@ export default function Safetyshoes() {
     const fetchuniformData = async () => {
       try {
         const response = await axios.get(
-          `http://localhost:3000/api/products/getuniforms`
+          `${import.meta.env.VITE_BACKEND_URL}/api/products/getuniforms`
         );
         setuniformData(response.data.data);
       } catch (error) {
@@ -29,7 +29,7 @@ export default function Safetyshoes() {
   }, []);
 
   const handleviewmore = (_id) => {
-    navigate(`/products/uniform/${_id}`);
+    navigate(`/products/uniforms/${_id}`);
   };
 
   if (loading) {

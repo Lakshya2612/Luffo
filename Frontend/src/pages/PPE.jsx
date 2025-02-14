@@ -14,7 +14,7 @@ export default function Safetyshoes() {
     const fetchppeData = async () => {
       try {
         const response = await axios.get(
-          `http://localhost:3000/api/products/getppe`
+          `${import.meta.env.VITE_BACKEND_URL}/api/products/getppe`
         );
         setppeData(response.data.data);
       } catch (error) {

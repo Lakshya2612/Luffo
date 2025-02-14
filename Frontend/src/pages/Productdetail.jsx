@@ -13,7 +13,9 @@ export default function ProductDetail() {
     const fetchProductData = async () => {
       try {
         const response = await axios.get(
-          `http://localhost:3000/api/products/getproductdetail/${id}`
+          `${
+            import.meta.env.VITE_BACKEND_URL
+          }/api/products/getproductdetail/${id}`
         );
         setProductData(response.data.data);
       } catch (error) {

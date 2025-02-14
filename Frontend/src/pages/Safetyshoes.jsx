@@ -14,7 +14,7 @@ export default function Safetyshoes() {
     const fetchShoeData = async () => {
       try {
         const response = await axios.get(
-          `http://localhost:3000/api/products/getshoes`
+          `${import.meta.env.VITE_BACKEND_URL}/api/products/getshoes`
         );
         setShoeData(response.data.data);
       } catch (error) {
