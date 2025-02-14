@@ -3,9 +3,11 @@ import { useState, useEffect } from "react";
 import { toast } from "react-toastify";
 import axios from "axios";
 import EnquiryForm from "../components/Enquiry form/Enquiryform";
+import Loader from "../components/Loader/Loader.jsx";
 
 export default function ProductDetail() {
   const [productData, setProductData] = useState({});
+  const [loading, setLoading] = useState(true);
   const [showForm, setShowForm] = useState(false);
   const { id } = useParams();
 
@@ -20,6 +22,8 @@ export default function ProductDetail() {
         setProductData(response.data.data);
       } catch (error) {
         toast.error(error.response.data.message);
+      } finally {
+        setLoading(false);
       }
     };
 
@@ -33,6 +37,9 @@ export default function ProductDetail() {
   const handleCloseForm = () => {
     setShowForm(false);
   };
+  if (loading) {
+    return <Loader />;
+  }
   if (!productData || !productData.name) {
     return (
       <div className="container mx-auto py-12 px-4 sm:px-6 lg:px-8 text-center">

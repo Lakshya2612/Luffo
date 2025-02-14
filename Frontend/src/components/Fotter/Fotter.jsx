@@ -94,7 +94,7 @@ export default function Footer() {
           </h1>
           <div className="flex justify-center space-x-4 sm:justify-start">
             <a
-              href="https://www.facebook.com/luffo.chiragcollection"
+              href="https://www.facebook.com/share/1Bc8rFSoP6/?mibextid=wwXIfr"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Visit our Facebook page"
