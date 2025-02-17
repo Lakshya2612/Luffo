@@ -62,7 +62,7 @@ export default function Safetyshoes() {
               className="w-64 bg-white border border-gray-300 rounded-lg shadow-md hover:shadow-lg transition-all duration-300 p-2"
             >
               <img
-                src={ppe.image}
+                src={ppe.imageurl}
                 alt={ppe.name}
                 className="w-auto h-48 object-cover rounded-md mb-4 m-auto"
               />
