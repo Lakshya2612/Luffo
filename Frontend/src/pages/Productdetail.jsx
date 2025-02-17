@@ -56,7 +56,7 @@ export default function ProductDetail() {
         <div className="flex-1">
           <img
             className="w-full h-auto rounded-lg shadow-lg"
-            src={productData.image}
+            src={productData.imageurl}
             alt={productData.name}
           />
         </div>
@@ -65,11 +65,12 @@ export default function ProductDetail() {
             {productData.name}
           </h1>
           <p className="text-gray-600 mb-6">{productData.description}</p>
-
-          <h2 className="text-2xl font-semibold text-gray-800 mb-4">
-            Available Sizes
-          </h2>
-          {Array.isArray(productData.sizes) && productData.sizes.length > 0 ? (
+          {productData.sizes.length > 0 && (
+            <h2 className="text-2xl font-semibold text-gray-800 mb-4">
+              Available Sizes
+            </h2>
+          )}
+          {Array.isArray(productData.sizes) && productData.sizes.length > 0 && (
             <ul className="list-disc pl-6 space-y-2">
               {productData.sizes.map((size, index) => (
                 <li key={index} className="text-gray-600">
@@ -77,8 +78,6 @@ export default function ProductDetail() {
                 </li>
               ))}
             </ul>
-          ) : (
-            <p className="text-gray-600">No sizes available</p>
           )}
 
           <div className="mt-8">
