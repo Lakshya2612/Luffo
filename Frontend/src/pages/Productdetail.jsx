@@ -37,9 +37,11 @@ export default function ProductDetail() {
   const handleCloseForm = () => {
     setShowForm(false);
   };
+
   if (loading) {
     return <Loader />;
   }
+
   if (!productData || !productData.name) {
     return (
       <div className="container mx-auto py-12 px-4 sm:px-6 lg:px-8 text-center">
@@ -65,6 +67,25 @@ export default function ProductDetail() {
             {productData.name}
           </h1>
           <p className="text-gray-600 mb-6">{productData.description}</p>
+
+          <div className="flex items-center mb-6 space-x-4">
+            <span className="text-sm text-gray-500 line-through">
+              ₹{productData.mrp}
+            </span>
+
+            <span className="text-2xl font-semibold text-red-500">
+              ₹{productData.sellingprice}
+            </span>
+          </div>
+
+          {productData.discount && (
+            <div className="flex items-center mb-6">
+              <span className="text-sm font-medium text-green-600 bg-green-100 px-3 py-1 rounded-full">
+                {productData.discount} OFF
+              </span>
+            </div>
+          )}
+
           {productData.sizes.length > 0 && (
             <h2 className="text-2xl font-semibold text-gray-800 mb-4">
               Available Sizes
@@ -90,6 +111,7 @@ export default function ProductDetail() {
           </div>
         </div>
       </div>
+
       {showForm && (
         <EnquiryForm product={productData} onClose={handleCloseForm} />
       )}

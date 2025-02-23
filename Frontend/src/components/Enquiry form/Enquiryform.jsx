@@ -45,7 +45,7 @@ export default function Enquiryform({ product, onClose }) {
         <div className="flex items-center mb-4 justify-between">
           <div className="flex items-center">
             <img
-              className="w-12 h-12 rounded-full mr-4"
+              className="w-12 h-12  rounded-full mr-4"
               src={product.imageurl}
               alt={product.name}
             />
